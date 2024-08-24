@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Void</title>
+    <link rel="stylesheet" href="../static/style.css">
+  </head>
+  <body>
+    <audio id="scaryAudio" autoplay>
+      <source src="../static/audio/scaryAudio.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+            const audio = document.getElementById('myAudio');
+            audio.play().catch(error => {
+                console.error('Autoplay was prevented:', error);
+            });
+        });
+    </script>
+    <div class="title">
+      <p class="gameTitle">The Void<p>
+    </div>
+    <div class="forms">
+      <div>
+        <form class="signUp" action="/submit" method="POST">
+          <p class="signupLabel">Sign Up</p>
+          <input type="hidden" name="form_type" value="signup">
+          <label for="first name">First Name:</label>
+          <input type="text" id="first name" name="fname" required>
+
+          <label for="last nanme">Last Name:</label>
+          <input type="text" id="last name" name="lname" required>
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required>
+
+          <label for="password">Password:</label>
+          <input type="text" id="password" name="password" required>
+
+          <label for="gamertag">Gamertag:</label>
+          <input type="text" id="gamertag" name="gamertag" required>
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+      <div>
+        <form class="login" action="/submit" method="POST">
+          <p class="loginLabel">Log In</p>
+
+          <input type="hidden" name="form_type" value="login">
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="login_email" required>
+
+          <label for="password">Password:</label>
+          <input type="text" id="password" name="login_password" required>
+
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

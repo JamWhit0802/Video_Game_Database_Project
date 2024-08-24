@@ -1,0 +1,45 @@
+
+body {
+  background-image: url(../static/images/forest.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: valium;
+  src: url(../static/fonts/drama.ttf);
+}
+
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-family: valium;
+  font-size: 50px;
+}
+
+.logout_button {
+  background-color: rgb(13, 42, 13);
+  color: white;
+  border-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 80px;
+  width: 160px;
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

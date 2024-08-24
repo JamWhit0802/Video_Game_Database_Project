@@ -1,0 +1,110 @@
+
+
+@font-face {
+  font-family: valium;
+  src: url(../static/fonts/drama.ttf);
+}
+
+.gameTitle{
+  font-family: valium;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+input{
+  display: flex;
+  margin-top: 5px;
+  border: none;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+label{
+  display: flex;
+  margin-top: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+  text-shadow: -1px -1px 0 rgb(25, 70, 25),  
+                1px -1px 0 rgb(25, 70, 25),
+                -1px  1px 0 rgb(25, 70, 25),
+                1px  1px 0 rgb(5, 70, 25);
+}
+
+button {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(25, 70, 25);
+  color: white;
+  font-size: 17px;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(25, 70, 25);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.signupLabel,.loginLabel{
+  color: rgb(25,70,25);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: underline;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body{
+  background-image: url(../static/images/foggy.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.login,.signUp{
+  margin-top: 40px;
+}

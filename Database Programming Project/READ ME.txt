@@ -1,0 +1,59 @@
+READ ME
+
+--BUILT WITH--
+PYTHON
+FLASK
+JAVASCRIPT
+ORACLE SQL DEVELOPER
+HTML
+CSS
+VSCODE
+SQL
+
+
+
+RUNNING
+	1. Download the SQL files from the SQL file folder
+
+
+	2. Download and open vidogameDatabase.py Python file in VSCODE
+
+
+	3. Open the terminal in VSCODE by going to the left upper-hand corner clicking 	"View" 	then clicking "Terminal"
+
+
+	4. Go back to Oracle and connect to a connection called "CSC452", your Username is 	jwhitma2, your password is cdm2070236, your hostname is 	acadoradbprd01.dpu.depaul.edu, your Port is 1521, and your SID is ACADPRD0 and 	click connect
+
+
+	5. Open all 4 SQL files in Oracle by clicking file->open->filename
+
+
+	6. Run 3 of the 4 files, run the tables file first, then the inserts file, then the 	triggers file. Don't run the select file just yet
+
+
+	7. Go back to VSCODE and in the terminal make sure you are in the correct directory 	before running the file. For example, if my Python file was in a file called 	documents and then inside of a file called Python I would type 
+	
+	cd "C:\documents\python"
+
+
+	8. Then you will type 
+
+	python videogameDatabase.py
+
+
+	9. Go to this link "http://localhost:5000/" or follow the link that is given to you 	in the terminal after you enter in the previous command in step 9
+
+
+	10. You should now be at THE VOID screen, type in your information in the sign up 	column and click sign up
+
+
+	11. You will be taken to a log out page after clicking sign up, click on the log 	out button after
+
+
+	12. You will then be taken back to the signup/login page feel free to try logging 	in now and you will be taken back to the log out page and can press log out when 	ever you please
+
+
+	13. After either step 11 or 12 go back to oracle and run the select.sql file this 	will show the information you inputted into the sign up column, when you logged in 	and out, how long you were logged in for and your specialized player_id that 
+	identifies each player that signs up
+
+
