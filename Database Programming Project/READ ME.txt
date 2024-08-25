@@ -1,5 +1,8 @@
 READ ME
 
+Dexription: This is my first ever solo project that I've done. I did this for my Database Programming Class and I finished it in 5 days!
+This project is meant to use Oracle SQL developer to store the data from a sign up html page for an online video game(the game is not implemented this is just and idea of the type of data that is being stored. This information from the HTML form is then sent to Python which then send the information to Oracle to store the collected data into the respective databases. This is version 1.0, the completed version I submitted for a grade. 
+
 --BUILT WITH--
 PYTHON
 FLASK
@@ -12,7 +15,7 @@ SQL
 
 
 
-RUNNING
+How To Run
 	1. Download the SQL files from the SQL file folder
 
 
