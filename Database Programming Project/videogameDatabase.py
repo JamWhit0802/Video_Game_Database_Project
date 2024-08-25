@@ -1,9 +1,11 @@
 from flask import Flask, request, redirect, flash, render_template, session
 import cx_Oracle
 
+#Creation of flask app
 my_app = Flask(__name__)
 my_app.secret_key = 'your_secret_key'
 
+#Connection to Oracle
 def get_db_connection():
     dsn = cx_Oracle.makedsn("acadoradbprd01.dpu.depaul.edu", 1521, sid="ACADPRD0")
     connection = cx_Oracle.connect(user='jwhitma2', password='cdm2070236', dsn=dsn)
@@ -13,6 +15,7 @@ def get_db_connection():
 def index():
     return render_template('videogameDatabase.html')
 
+#submission function from forms from HTML
 @my_app.route('/submit', methods=['POST'])
 def submit():
     print("Form submitted!")
@@ -25,6 +28,7 @@ def submit():
         connection = get_db_connection()
         cursor = connection.cursor()
 
+        #if the type of form is the signup form ("Sign up button is pushed")
         if form_type == 'signup':
             # Handle signup form
             fname = request.form['fname']
@@ -49,6 +53,7 @@ def submit():
             flash('Signup successful!')
             return redirect('/game_session')
 
+        #if the type of form is the login form ("Log in button is pushed")
         elif form_type == 'login':
             # Handle login form
             email = request.form['login_email']
@@ -100,6 +105,7 @@ def game_session():
 
     return render_template('game_session.html')
 
+#Now you are on the logout page, function for log out page
 @my_app.route('/logout', methods=['POST'])
 def logout():
     player_id = session.get('player_id')
